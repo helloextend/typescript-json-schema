@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "@types/json-schema": "^7.0.3",
-    "glob": "~7.1.4",
+    "glob": "~7.1.7",
     "json-stable-stringify": "^1.0.1",
     "typescript": "^3.5.3",
     "yargs": "^14.0.0"
