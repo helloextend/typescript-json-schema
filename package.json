@@ -49,7 +49,8 @@
     "glob": "~7.1.4",
     "json-stable-stringify": "^1.0.1",
     "typescript": "^3.5.3",
-    "yargs": "^14.0.0"
+    "yargs": "^14.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/chai": "^4.2.0",
@@ -70,6 +71,9 @@
     "debug": "ts-node --inspect=19248 --debug-brk typescript-json-schema-cli.ts",
     "run": "ts-node typescript-json-schema-cli.ts",
     "build": "tsc -p .",
-    "lint": "tslint --project tsconfig.json -c tslint.json --exclude '**/*.d.ts'"
-  }
+    "lint": "tslint --project tsconfig.json -c tslint.json --exclude '**/*.d.ts'",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
